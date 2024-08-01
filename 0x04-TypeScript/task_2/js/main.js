@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.createEmployee = createEmployee;
 exports.isDirector = isDirector;
 exports.executeWork = executeWork;
+exports.teachClass = teachClass;
 var Director = /** @class */ (function () {
     function Director() {
     }
@@ -53,3 +54,13 @@ function executeWork(employee) {
 }
 console.log(executeWork(createEmployee(200)));
 console.log(executeWork(createEmployee(1000)));
+function teachClass(todayClass) {
+    if (todayClass === 'Math') {
+        return 'Teaching Math';
+    }
+    else if (todayClass === 'History') {
+        return 'Teaching History';
+    }
+}
+console.log(teachClass('Math'));
+console.log(teachClass('History'));
